@@ -1,0 +1,4 @@
+public class LinkedList{
+  
+  static Node head = null; 
+}
