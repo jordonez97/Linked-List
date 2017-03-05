@@ -1,7 +1,15 @@
 public class LinkedList{
   
-  class LinkedList {
-    static Node head = null;
+  static Node head = null;
+  class Node 
+  {
+    int number;
+    Node next, prev;
+    
+    Node(int n) {
+            number = n;
+            next = prev = null;
+        }
     
    
 }
