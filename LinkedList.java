@@ -20,6 +20,14 @@ public class LinkedList{
       this.prev = prev; 
     }
   }
+  
+  public int size(){
+    return size;
+}
+
+
+
+
 }
   
  
