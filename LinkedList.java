@@ -1,6 +1,43 @@
+
 public class LinkedList{
   
-  static Node head = null;
+  private Node head;
+  private Node tail;
+  private int size; 
+  
+  public LinkedList() {
+    size = 0;
+  }
+  
+  private class Node { 
+    String E;
+    Node next;
+    Node prev;
+    
+    public Node(String E, Node next, Node prev){
+      this.E = E; 
+      this.next = next;
+      this.prev = prev; 
+    }
+  }
+}
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /** static Node head = null;
   class Node 
   {
     int number;
@@ -10,7 +47,5 @@ public class LinkedList{
             number = n;
             next = prev = null;
         }
-    
+    */
    
-}
-}
