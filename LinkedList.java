@@ -1,5 +1,5 @@
 
-public class LinkedList{
+public class LinkedList <E>{
   
   private Node head;
   private Node tail;
@@ -10,12 +10,12 @@ public class LinkedList{
   }
   
   private class Node { 
-    String E;
+    E element;
     Node next;
     Node prev;
     
-    public Node(String E, Node next, Node prev){
-      this.E = E; 
+    public Node(E element, Node next, Node prev){
+      this.element = element; 
       this.next = next;
       this.prev = prev; 
     }
@@ -27,11 +27,18 @@ public class LinkedList{
   public boolean isEmpty() {
     return size == 0;
   }
-
-
-
-
-
+  
+  public void addFirst(E element){
+    Node tmp = new Node(element, head, null);
+    if (head != null) {
+      head.prev = tmp;
+    }
+    head = tmp;
+    if(tail == null) {
+      tail = tmp;
+    }
+    size++;
+}
 }
   
  
